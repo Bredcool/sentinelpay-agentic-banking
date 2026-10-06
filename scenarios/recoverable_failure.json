@@ -1,0 +1,16 @@
+{
+    "id": "recoverable-transient-001",
+    "name": "Recoverable transient payment failure",
+    "description": "A payment fails because of a transient downstream condition.",
+    "input": {
+        "payment_id": "pay_demo_001",
+        "failure_type": "transient",
+        "confidence": 0.94,
+        "retry_count": 0
+    },
+    "expected": {
+        "status": "resolved",
+        "action": "retry",
+        "requires_approval": false
+    }
+}

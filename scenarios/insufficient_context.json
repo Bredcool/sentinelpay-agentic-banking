@@ -1,0 +1,16 @@
+{
+    "id": "insufficient-context-001",
+    "name": "Insufficient transaction context",
+    "description": "The payment failure cannot be classified safely because required context is missing.",
+    "input": {
+        "payment_id": "pay_demo_003",
+        "failure_type": "unknown",
+        "confidence": 0.42,
+        "retry_count": 1
+    },
+    "expected": {
+        "status": "escalated",
+        "action": "escalate",
+        "requires_approval": true
+    }
+}

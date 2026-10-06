@@ -1,0 +1,16 @@
+{
+    "id": "approval-low-confidence-001",
+    "name": "Low-confidence incident",
+    "description": "The agent does not have enough evidence to safely determine the recovery action.",
+    "input": {
+        "payment_id": "pay_demo_002",
+        "failure_type": "unknown",
+        "confidence": 0.51,
+        "retry_count": 0
+    },
+    "expected": {
+        "status": "escalated",
+        "action": "escalate",
+        "requires_approval": true
+    }
+}
